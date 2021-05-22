@@ -10,14 +10,14 @@ defmodule Rumbl.Application do
       # Start the Ecto repository
       Rumbl.Repo,
       # Start the Telemetry supervisor
-      RumblWeb.Telemetry,
-      # Start the PubSub system
-      {Phoenix.PubSub, name: Rumbl.PubSub},
-      # Start the Endpoint (http/https)
-      RumblWeb.Endpoint,
-      # Start a worker by calling: Rumbl.Worker.start_link(arg)
-      # {Rumbl.Worker, arg}
-      RumblWeb.Presence
+      # RumblWeb.Telemetry,
+      # # Start the PubSub system
+      # {Phoenix.PubSub, name: Rumbl.PubSub},
+      # # Start the Endpoint (http/https)
+      # RumblWeb.Endpoint,
+      # # Start a worker by calling: Rumbl.Worker.start_link(arg)
+      # # {Rumbl.Worker, arg}
+      # RumblWeb.Presence
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
@@ -28,8 +28,8 @@ defmodule Rumbl.Application do
 
   # Tell Phoenix to update the endpoint configuration
   # whenever the application is updated.
-  def config_change(changed, _new, removed) do
-    RumblWeb.Endpoint.config_change(changed, removed)
-    :ok
-  end
+  # def config_change(changed, _new, removed) do
+  #   RumblWeb.Endpoint.config_change(changed, removed)
+  #   :ok
+  # end
 end
