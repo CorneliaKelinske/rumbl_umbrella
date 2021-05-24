@@ -9,7 +9,7 @@ defmodule RumblWeb.Application do
     children = [
       # Start the Telemetry supervisor
       #RumblWeb.Telemetry,
-      {Phoenix.PubSub, name: RumblWeb.PubSub},
+       {Phoenix.PubSub, name: RumblWeb.PubSub},
       RumblWeb.Presence,
       RumblWeb.Endpoint
       # Start a worker by calling: RumblWeb.Worker.start_link(arg)

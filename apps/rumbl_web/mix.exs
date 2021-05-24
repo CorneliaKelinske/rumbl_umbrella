@@ -37,6 +37,7 @@ defmodule RumblWeb.MixProject do
   # Type `mix help deps` for examples and options.
   defp deps do
     [
+      {:phoenix_pubsub, "~> 2.0"},
       {:phoenix, "~> 1.5.9"},
       {:phoenix_ecto, "~> 4.0"},
       {:phoenix_html, "~> 2.11"},
