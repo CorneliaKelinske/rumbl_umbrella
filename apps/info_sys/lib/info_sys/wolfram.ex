@@ -1,5 +1,6 @@
 defmodule InfoSys.Wolfram do
   import SweetXml
+
   alias InfoSys.Result
 
   @behaviour InfoSys.Backend
@@ -10,7 +11,7 @@ defmodule InfoSys.Wolfram do
   def name, do: "wolfram"
 
   @impl true
-  def compute(query_str, _opts_) do
+  def compute(query_str, _opts) do
     query_str
     |> fetch_xml()
     |> xpath(~x"/queryresult/pod[contains(@title, 'Result') or
