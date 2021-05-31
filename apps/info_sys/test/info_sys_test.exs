@@ -24,10 +24,20 @@ defmodule InfoSysTest do
 
   test "compute/2 with backend results" do
     assert [%Result{backend: TestBackend, text: "result"}] =
-      InfoSys.compute("result", backends: [TestBackend])
+      InfoSys.compute("result", backend: [TestBackend])
   end
 
   test "compute/2 with no backend results" do
-    assert [] = InfoSys.compute("none", backends: [TestBackend])
+    assert [] = InfoSys.compute("none", backend: [TestBackend])
+  end
+
+  test "compute/2 with timeout returns no results" do
+    results = InfoSys.compute("timeout", backend: [TestBackend], timeout: 10)
+    assert results == []
+  end
+
+  @tag :capture_log
+  test "compute/2 discards backend errors" do
+    assert InfoSys.compute("boom", backend: [TestBackend]) == []
   end
 end
