@@ -6,16 +6,16 @@
     datatypes='Math'
     timedout=''
     timedoutpods=''
-    timing='0.987'
-    parsetiming='0.139'
+    timing='0.754'
+    parsetiming='0.106'
     parsetimedout='false'
     recalculate=''
-    id='MSP869813c3e0ag111b1c5100001bag1269e6169icb'
-    host='https://www4c.wolframalpha.com'
-    server='4'
-    related='https://www4c.wolframalpha.com/api/v1/relatedQueries.jsp?id=MSPa869913c3e0ag111b1c5100005c9ibd225097cc0b3219332734639170747'
+    id='MSP5751ehd0iah5415cf3a00000h54bc6dgcf8cbg6'
+    host='https://www4d.wolframalpha.com'
+    server='33'
+    related='https://www4d.wolframalpha.com/api/v1/relatedQueries.jsp?id=MSPa5761ehd0iah5415cf3a000034ih1ic56b28e5333246665285705083762'
     version='2.6'
-    inputstring='1+1'>
+    inputstring='1 + 1'>
  <pod title='Input'
      scanner='Identity'
      id='Input'
@@ -23,7 +23,7 @@
      error='false'
      numsubpods='1'>
   <subpod title=''>
-   <img src='https://www4c.wolframalpha.com/Calculate/MSP/MSP870013c3e0ag111b1c5100004e09d9b9daf9d21a?MSPStoreType=image/gif&amp;s=4'
+   <img src='https://www4d.wolframalpha.com/Calculate/MSP/MSP5771ehd0iah5415cf3a0000338a72b2g5499c4c?MSPStoreType=image/gif&amp;s=33'
        alt='1 + 1'
        title='1 + 1'
        width='32'
@@ -45,7 +45,7 @@
      numsubpods='1'
      primary='true'>
   <subpod title=''>
-   <img src='https://www4c.wolframalpha.com/Calculate/MSP/MSP870113c3e0ag111b1c51000020h3cacab8h8fg50?MSPStoreType=image/gif&amp;s=4'
+   <img src='https://www4d.wolframalpha.com/Calculate/MSP/MSP5781ehd0iah5415cf3a0000169ah883e43bbg0c?MSPStoreType=image/gif&amp;s=33'
        alt='2'
        title='2'
        width='8'
@@ -71,7 +71,7 @@
      error='false'
      numsubpods='1'>
   <subpod title=''>
-   <img src='https://www4c.wolframalpha.com/Calculate/MSP/MSP870213c3e0ag111b1c51000068c3hiif6fg171be?MSPStoreType=image/gif&amp;s=4'
+   <img src='https://www4d.wolframalpha.com/Calculate/MSP/MSP5791ehd0iah5415cf3a000019dcchg6h555e4g9?MSPStoreType=image/gif&amp;s=33'
        alt='Number line'
        title=''
        width='330'
@@ -92,7 +92,7 @@
      error='false'
      numsubpods='1'>
   <subpod title=''>
-   <img src='https://www4c.wolframalpha.com/Calculate/MSP/MSP870313c3e0ag111b1c51000026hf66f80aa8aiaa?MSPStoreType=image/gif&amp;s=4'
+   <img src='https://www4d.wolframalpha.com/Calculate/MSP/MSP5801ehd0iah5415cf3a000033dad59c615id278?MSPStoreType=image/gif&amp;s=33'
        alt='two'
        title='two'
        width='25'
@@ -113,7 +113,7 @@
      error='false'
      numsubpods='1'>
   <subpod title=''>
-   <img src='https://www4c.wolframalpha.com/Calculate/MSP/MSP870413c3e0ag111b1c5100002de8b5g51g638de4?MSPStoreType=image/gif&amp;s=4'
+   <img src='https://www4d.wolframalpha.com/Calculate/MSP/MSP5811ehd0iah5415cf3a0000144dg69h7i186471?MSPStoreType=image/gif&amp;s=33'
        alt=' | + | | = | 
 1 | | 1 | | 2'
        title=' | + | | = | 
@@ -140,7 +140,7 @@
    <microsources>
     <microsource>HumanComputationQuery</microsource>
    </microsources>
-   <img src='https://www4c.wolframalpha.com/Calculate/MSP/MSP870513c3e0ag111b1c5100003hdb8acfdg7c1e5i?MSPStoreType=image/gif&amp;s=4'
+   <img src='https://www4d.wolframalpha.com/Calculate/MSP/MSP5821ehd0iah5415cf3a00006ai27d3b483i98gg?MSPStoreType=image/gif&amp;s=33'
        alt='age 6: 3.2 seconds | age 8: 1.8 seconds | age 10: 1.2 seconds | 
 age 18: 0.83 seconds
 (ignoring concentration, repetition, variations in education, etc.)'
@@ -165,7 +165,7 @@ age 18: 0.83 seconds
   </states>
  </pod>
  <sources count='1'>
-  <source url='https://www4c.wolframalpha.com/sources/HumanComputationQuerySourceInformationNotes.html'
+  <source url='https://www4d.wolframalpha.com/sources/HumanComputationQuerySourceInformationNotes.html'
       text='Human computation query' />
  </sources>
 </queryresult>
