@@ -26,11 +26,11 @@ defmodule InfoSys.Wolfram do
     [%Result{backend: __MODULE__, score: 95, text: to_string(answer)}]
   end
 
-  defp fetch_xml(query) do
-    {:ok, {_, _, body}} = :httpc.request(String.to_charlist(url(query)))
+  # defp fetch_xml(query) do
+  #   {:ok, {_, _, body}} = :httpc.request(String.to_charlist(url(query)))
 
-    body
-  end
+  #   body
+  # end
 
   defp url(input) do
     "#{@base}?" <>
@@ -44,5 +44,6 @@ defmodule InfoSys.Wolfram do
     {:ok, {_, _, body}} = @http.request(String.to_charlist(url(query)))
 
     body
+
   end
 end
