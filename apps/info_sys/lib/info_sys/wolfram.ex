@@ -39,4 +39,11 @@ defmodule InfoSys.Wolfram do
   end
 
   defp id, do: Application.fetch_env!(:info_sys, :wolfram)[:app_id]
+
+  @http Application.get_env(:info_sys, :wolfram)[:http_client] || :httpc
+  defp fetch_xml(query) do
+    {:ok, {_,_, body}} = @http.request(String.to_charlist(url(query)))
+
+    body
+  end
 end
