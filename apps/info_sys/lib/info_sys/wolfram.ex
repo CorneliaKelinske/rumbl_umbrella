@@ -32,17 +32,16 @@ defmodule InfoSys.Wolfram do
     body
   end
 
-
   defp url(input) do
     "#{@base}?" <>
-    URI.encode_query(appid: id(), input: input, format: "plaintext")
+      URI.encode_query(appid: id(), input: input, format: "plaintext")
   end
 
   defp id, do: Application.fetch_env!(:info_sys, :wolfram)[:app_id]
 
   @http Application.get_env(:info_sys, :wolfram)[:http_client] || :httpc
   defp fetch_xml(query) do
-    {:ok, {_,_, body}} = @http.request(String.to_charlist(url(query)))
+    {:ok, {_, _, body}} = @http.request(String.to_charlist(url(query)))
 
     body
   end

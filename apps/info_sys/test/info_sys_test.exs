@@ -24,7 +24,7 @@ defmodule InfoSysTest do
 
   test "compute/2 with backend results" do
     assert [%Result{backend: TestBackend, text: "result"}] =
-      InfoSys.compute("result", backend: [TestBackend])
+             InfoSys.compute("result", backend: [TestBackend])
   end
 
   test "compute/2 with no backend results" do
