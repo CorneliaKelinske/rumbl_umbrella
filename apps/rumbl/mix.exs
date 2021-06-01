@@ -41,7 +41,6 @@ defmodule Rumbl.MixProject do
       {:postgrex, ">= 0.0.0"},
       {:pbkdf2_elixir, "~> 1.0"}
       # {:jason, "~> 1.0"},
-
     ]
   end
 

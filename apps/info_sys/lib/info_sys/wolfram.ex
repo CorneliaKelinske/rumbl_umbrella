@@ -44,6 +44,5 @@ defmodule InfoSys.Wolfram do
     {:ok, {_, _, body}} = @http.request(String.to_charlist(url(query)))
 
     body
-
   end
 end
