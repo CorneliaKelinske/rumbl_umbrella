@@ -31,6 +31,7 @@ Ecto.Adapters.SQL.Sandbox.mode(Rumbl.Repo, :manual)
   def insert_video(user, attrs \\ %{}) do
     video_fields = Enum.into(attrs, default_video())
     {:ok, video} = Rumbl.Multimedia.create_video(user, video_fields)
+    video
   end
 
   def login(%{conn: conn, login_as: username}) do
@@ -41,5 +42,4 @@ Ecto.Adapters.SQL.Sandbox.mode(Rumbl.Repo, :manual)
   def login(%{conn: conn}), do: {conn, :logged_out}
 end
 
-# ExUnit.start()
-# Ecto.Adapters.SQL.Sandbox.mode(Rumbl.Repo, :manual)
+
