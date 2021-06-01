@@ -31,5 +31,12 @@ defmodule RumblWeb.TestHelpers do
   end
 end
 
+def login(%{conn: conn, login_as: username}) do
+  user = insert_user(username: username)
+  {Plug.Conn.assign(conn, :current_user, user), user}
+end
+
+def login(%{conn: conn}), do: {conn, :logged_out}
+
 # ExUnit.start()
 # Ecto.Adapters.SQL.Sandbox.mode(Rumbl.Repo, :manual)
