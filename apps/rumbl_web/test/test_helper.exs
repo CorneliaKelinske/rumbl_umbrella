@@ -1,8 +1,7 @@
 defmodule RumblWeb.TestHelpers do
+  ExUnit.start()
+  Ecto.Adapters.SQL.Sandbox.mode(Rumbl.Repo, :manual)
 
-
-ExUnit.start()
-Ecto.Adapters.SQL.Sandbox.mode(Rumbl.Repo, :manual)
   defp default_user() do
     %{
       name: "Some User",
@@ -41,5 +40,3 @@ Ecto.Adapters.SQL.Sandbox.mode(Rumbl.Repo, :manual)
 
   def login(%{conn: conn}), do: {conn, :logged_out}
 end
-
-
