@@ -1,5 +1,8 @@
 defmodule RumblWeb.TestHelpers do
 
+
+ExUnit.start()
+Ecto.Adapters.SQL.Sandbox.mode(Rumbl.Repo, :manual)
   defp default_user() do
     %{
       name: "Some User",
@@ -12,9 +15,9 @@ defmodule RumblWeb.TestHelpers do
     {:ok, user} =
       attrs
       |> Enum.into(default_user())
-      |> Rumbl.Accounts.register_user
+      |> Rumbl.Accounts.register_user()
 
-      user
+    user
   end
 
   defp default_video() do
@@ -29,14 +32,14 @@ defmodule RumblWeb.TestHelpers do
     video_fields = Enum.into(attrs, default_video())
     {:ok, video} = Rumbl.Multimedia.create_video(user, video_fields)
   end
-end
 
-def login(%{conn: conn, login_as: username}) do
-  user = insert_user(username: username)
-  {Plug.Conn.assign(conn, :current_user, user), user}
-end
+  def login(%{conn: conn, login_as: username}) do
+    user = insert_user(username: username)
+    {Plug.Conn.assign(conn, :current_user, user), user}
+  end
 
-def login(%{conn: conn}), do: {conn, :logged_out}
+  def login(%{conn: conn}), do: {conn, :logged_out}
+end
 
 # ExUnit.start()
 # Ecto.Adapters.SQL.Sandbox.mode(Rumbl.Repo, :manual)
